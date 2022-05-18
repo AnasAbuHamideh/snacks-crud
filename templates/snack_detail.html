@@ -10,7 +10,8 @@
           <h1>{{snack.title}}</h1>
           <h2>Purchaser: {{snack.purchaser}} <br> Description: {{snack.description}}</h2>
           <h3>{{snack.get_absolute_url}}</h3>
-
+          <a href="{% url 'snacks-update' snack.pk %}" class="btn-get-started scrollto">Update</a>
+          <a href="{% url 'snacks-delete' snack.pk %}" class="btn-get-started scrollto">Delete</a> 
           <a href="{% url 'snacks-list' %}" class="btn-get-started scrollto">Go back to home</a>
         </div>
       </div>

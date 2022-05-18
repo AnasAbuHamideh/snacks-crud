@@ -16,6 +16,10 @@
   </section><!-- End Hero -->
 {% endblock %}
 {% block main %}
+<button><a href="{% url 'snacks-create' %}" class="btn-get-started scrollto">Create</a></button>
+{%  for snack in object_list %}
+  <a href="{% url 'snacks-detail' snack.pk %}"><h2>{{snack.title}}</h2></a>
+{% endfor %}
 <!-- ======= About Section ======= -->
 <section id="about" class="about section-bg">
     <div class="container" data-aos="fade-up">
