@@ -57,5 +57,4 @@ class SnackTest(TestCase):
     #     url = reverse("snacks-delete")
     #     response =self.client.get(url)
     #     self.assertTemplateUsed(response, "snack_delete.html")
-    #     self.assertTemplateUsed(response, "_base.html")
-    #
+    
