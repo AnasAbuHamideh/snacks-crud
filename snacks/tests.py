@@ -58,3 +58,4 @@ class SnackTest(TestCase):
     #     response =self.client.get(url)
     #     self.assertTemplateUsed(response, "snack_delete.html")
     #     self.assertTemplateUsed(response, "_base.html")
+    #
